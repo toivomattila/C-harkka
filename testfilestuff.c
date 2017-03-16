@@ -3,12 +3,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/* Tää vuotaa muistia niin paljon ettei mitään järkeä... */
+
 int main(int argc, char const *argv[])
 {
 	bottleLink bl = NULL;
 
 	/* Get bottles from file */
+	printf("TIE1 - Lue pullot tiedostosta\n");
 	getBottles("tuotetiedosto.txt", &bl);
+	printf("Tarkista että tuloste vastaa odotuksia ja että virheitä ei näy.\n Paina jotain jatkaaksesi.\n");
+	getchar();
 
 	/* reset log files */
 	removeFile("tilapaistiedosto.txt");

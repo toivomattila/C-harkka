@@ -1,6 +1,12 @@
+# .o files
 *.o
-HT_*/*
+
+# Log files
 *.log
 lokitiedosto.txt
 temp.txt
 tilapaistiedosto.txt
+
+# Program binaries
+pullonpalautus
+testfiles
