@@ -1,0 +1,12 @@
+Ohjelmaa testattu seuraavilla ilman epäsuotavaa tulosta:
+-kirjaimia
+-kirjainyhdistelmiä
+-erikoismerkkejä
+-kirjaimia erotettuna väleillä
+-nuomeroita erotettuna väleillä
+-laskutoimituksia, sulkujen kanssa & ilman
+-liukulukuja
+-sekä numeroita että erikoismerkkejä että kirjaimia erotettuna välillä
+-väli jonka jälkeen numero
+
+Kokeiltu myös antaa ohjelmalle parametrejä käynnistyessä, ei vaikutusta

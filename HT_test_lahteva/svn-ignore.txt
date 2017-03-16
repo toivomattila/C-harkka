@@ -1,0 +1,4 @@
+*.o
+pullonpalautus
+testfiles
+lokitiedosto.txt
