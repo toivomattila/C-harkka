@@ -1,0 +1,6 @@
+*.o
+HT_*/*
+*.log
+lokitiedosto.txt
+temp.txt
+tilapaistiedosto.txt
