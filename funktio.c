@@ -16,17 +16,27 @@ void timeNow(char * destination) {
 
 /* Palauttaa valikkovalinnan integerinä, kytkin päävalikon ja pullovalinnan toiminnoille */
 int getIntOption(int switchMain) {
+	int c;
+	long option;
+	char *ptr;
 	char opt[100];
+
 	fgets(opt, sizeof(opt), stdin);
 	if (opt[strlen(opt)-1] == '\n') {
 		opt[strlen(opt)-1] = '\0';
+	} else {
+		while ( (c = getchar()) != '\n');
 	}
+
 	for (int i = 0; i < strlen(opt); i++) {
 		if (isdigit(opt[i]) == 0) return 0;
 	}
+
+	if ((option = strtol(opt, &ptr, 10)) > 2147483646) return 0;
+
 	if (switchMain == 1) {
-		return atoi(opt)+1;
-	} else return atoi(opt);
+		return (int) option + 1;
+	} else return (int) option;
 }
 
 /* Tulostaa päävalikon ja palauttaa valinnan. */
