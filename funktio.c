@@ -28,7 +28,7 @@ int getIntOption(int switchMain) {
 		while ( (c = getchar()) != '\n');
 	}
 
-	for (int i = 0; i < strlen(opt); i++) {
+	for (unsigned int i = 0; i < strlen(opt); i++) {
 		if (isdigit(opt[i]) == 0) return 0;
 	}
 
